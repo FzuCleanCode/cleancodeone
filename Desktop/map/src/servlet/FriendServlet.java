@@ -1,0 +1,58 @@
+package servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import service.UserService;
+import model.User;
+
+public class FriendServlet extends HttpServlet {
+
+	private UserService userService;
+	
+	public void destroy() {
+		super.destroy(); 
+		
+	}
+
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		StringBuilder builder=new StringBuilder();
+		builder.append('[');
+		String id=request.getParameter("id");
+		userService=new UserService();
+		List<User> friends=userService.getFriends(id);
+		for (User user :friends) {
+			builder.append('{');
+			builder.append("id:\"").append(user.getId()).append("\",");
+			builder.append("password:\"").append(user.getPassword()).append("\",");
+			builder.append("isonline:\"").append(user.getIsonline()).append("\",");
+			builder.append("longitude:\"").append(user.getLongitude()).append("\",");
+			builder.append("latitude:\"").append(user.getLatitude()).append("\"},");
+		}
+		builder.deleteCharAt(builder.length()-1);
+		builder.append(']');
+		request.setAttribute("json", builder.toString());
+		request.getRequestDispatcher("/WEB-INF/page/friends.jsp").forward(request,response);
+	}
+
+	
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+	}
+
+	
+	public void init() throws ServletException {
+		// Put your code here
+	}
+
+}

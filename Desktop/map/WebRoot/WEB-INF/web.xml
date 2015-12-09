@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>map</display-name>
+  <filter>
+    <filter-name>Encoding</filter-name>
+    <filter-class>filter.EncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogininServlet</servlet-name>
+    <servlet-class>servlet.LogininServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FriendServlet</servlet-name>
+    <servlet-class>servlet.FriendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getOnlineFriend</servlet-name>
+    <servlet-class>servlet.getOnlineFriend</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getNonlineFriend</servlet-name>
+    <servlet-class>servlet.getNonlineFriend</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFriendServlet</servlet-name>
+    <servlet-class>servlet.AddFriendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMessageServlet</servlet-name>
+    <servlet-class>servlet.GetMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SureFriendServlet</servlet-name>
+    <servlet-class>servlet.SureFriendServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogininServlet</servlet-name>
+    <url-pattern>/LogininServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FriendServlet</servlet-name>
+    <url-pattern>/FriendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getOnlineFriend</servlet-name>
+    <url-pattern>/getOnlineFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getNonlineFriend</servlet-name>
+    <url-pattern>/getNonlineFriend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFriendServlet</servlet-name>
+    <url-pattern>/AddFriendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMessageServlet</servlet-name>
+    <url-pattern>/GetMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SureFriendServlet</servlet-name>
+    <url-pattern>/SureFriendServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
