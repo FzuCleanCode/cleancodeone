@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="brown">#947400</color> <!-- 棕色 -->
+    <color name="grey">#FFEBEBEB</color> <!-- 棕色 -->
+    <color name="yellow">#FFFF00</color>
+    <color name="new_yellow">#FAD337</color>
+	<color name="white">#FFFFFFFF</color>
+    <color name="new_white">#FFEBEBEB</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="new_gray">#999999</color>
+    <color name="new_black">#666666</color>
+    <color name="bright_red">#EB3049</color>
+	<color name="new_red">#EE4E63</color>
+	
+	<color name="trans">#00000000</color>
+	<color name="black">#000000</color>
+	<color name="navpage">#FFE1E8EB</color>
+	<color name="hint">#0ff0f2</color>
+	<color name="hint_grey">#9f9f9f</color>
+	<color name="ngray">#333333</color>
+	<color name="bgcolor">#ECF0F0</color>
+	
+	
+	<color name="selecttd">#acacac</color>
+</resources>
