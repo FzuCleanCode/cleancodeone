@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+   <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+        android:background="#ff33b5e5" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="欢迎使用校园通快递查询"
+            android:textSize="22sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    
+    
+     <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+       
+        android:layout_below="@id/relativeLayout1"
+        android:background="#ff33b5e5" >
+
+        <Button
+            android:id="@+id/currCom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:drawableRight="@drawable/item_btn_menu"
+            android:gravity="center"
+            android:text="申通快递"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="25dp"
+             />
+
+    </RelativeLayout>
+     
+     <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/fzu_bg"
+        android:layout_below="@id/relativeLayout2" >
+        
+         
+
+        <EditText
+            android:id="@+id/expressId"
+            android:layout_width="260dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:inputType="number"
+            android:hint="请输入运单号" />
+
+         <Button
+            android:id="@+id/search_btn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_shape"
+            android:layout_below="@id/expressId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" 
+            android:text="查询"
+            android:textColor="#DDA0DD"
+            android:textSize="20sp" />
+         
+         
+         <Button
+            android:id="@+id/history"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_shape"
+            android:layout_below="@id/search_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" 
+            android:text="查看历史记录"
+            android:textColor="#DDA0DD"
+            android:textSize="20sp" />
+         
+        
+        
+       
+    </RelativeLayout>
+    
+   
+
+</RelativeLayout>
