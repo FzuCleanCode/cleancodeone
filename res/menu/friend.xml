@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"  >
+     <item android:title="@string/statue" android:id="@+id/statue"
+        android:showAsAction="always">
+     	<menu>
+     	    <item android:title="@string/online" android:id="@+id/online"/>
+     	    <item android:title="@string/nonline" android:id="@+id/nonline"/>
+     	    <item android:title="@string/allfriend" android:id="@+id/allfriend"/>
+     	</menu>
+     </item>
+      <item android:title="@string/addfriend" android:id="@+id/addfriend"
+        android:showAsAction="always"/>
+      <item android:title="退出"	android:id="@+id/exit"
+        android:showAsAction="always"/>
+	
+</menu>

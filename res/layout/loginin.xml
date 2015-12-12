@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg" >
+
+    <RelativeLayout 
+        android:id="@+id/begin1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        >
+        <TextView 
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="欢迎使用位置服务"
+            android:textSize="25sp"
+            />
+        
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_below="@id/begin1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        
+        android:layout_alignParentLeft="true" >
+  
+         <EditText
+            android:id="@+id/username"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Please type the username" />
+
+    </RelativeLayout>
+    
+     
+     <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+       android:layout_below="@id/relativeLayout1"
+        android:layout_alignParentLeft="true" >
+  
+         <EditText
+            android:id="@+id/password"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Please type the password" />
+         
+         
+         <Button
+            android:id="@+id/login"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_shape"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" 
+            android:text="登录"
+            android:textColor="#DDA0DD"
+            android:textSize="20sp" />
+         
+         
+         <Button
+            android:id="@+id/regist"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_shape"
+            android:layout_below="@id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" 
+            android:text="注册"
+            android:textColor="#DDA0DD"
+            android:textSize="20sp" />
+         
+
+    </RelativeLayout>
+
+     
+
+</RelativeLayout>

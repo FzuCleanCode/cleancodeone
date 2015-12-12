@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bmaptest1.MainActivity" >
+
+    <item android:title="@string/model"
+        android:showAsAction="always">
+        <menu>
+            <item android:title="@string/normal" android:id="@+id/normalmenu"/>
+            <item android:title="@string/site" android:id="@+id/sitemenu"/>
+            <item android:title="@string/traffic" android:id="@+id/trafficmenu"/>
+            <item android:title="@string/mylocation" android:id="@+id/mylocation"/>
+            
+        </menu>
+    </item>
+    <item android:title="位置模式"
+        android:showAsAction="always">
+        <menu>
+            <item android:title="普通模式" android:id="@+id/normal"/>
+            <item android:title="跟随模式" android:id="@+id/gensui"/>
+            <item android:title="罗盘模式" android:id="@+id/luopan"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:background="@drawable/bg2"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+        android:background="#ff33b5e5" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="历史记录"
+            android:textSize="25sp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+         android:layout_alignParentLeft="true"
+        android:layout_height="23dp"
+        android:layout_below="@id/title"
+        android:background="#ff33b5e5" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" 
+            android:text="点击查询       长按删除"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title2"
+        android:cacheColorHint="#000000"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:padding="5dp">
+   </ListView>
+
+</RelativeLayout>

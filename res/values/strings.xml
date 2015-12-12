@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">福大通</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="model">地图模式</string>
+    <string name="normal">普通选择</string>
+    <string name="site">卫星选择</string>
+    <string name="traffic">交通地图</string>
+    <string name="mylocation">我的位置</string>
+	<string name="statue">好友状态</string>
+	<string name="addfriend">添加好友</string>
+	<string name="allfriend">全部好友</string>
+	<string name="online">在线好友</string>
+	<string name="nonline">离线好友</string>
+	<string name="position_service">位置服务</string>
+    <string name="express_service">快递服务</string>
+    <string name="weather_forecast">天气预报</string>
+    <string name="number_know_all">号码服务</string>
+    <string name="play_fu_zhou">游玩福州</string>
+</resources>
