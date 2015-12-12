@@ -50,6 +50,7 @@ public class UserServlet {
 			outputStream.write(entity);
 			if (connection.getResponseCode()==200) {
 				return true;
+System.out.printf("aa");
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
