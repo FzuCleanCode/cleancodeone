@@ -26,7 +26,7 @@ public class Com extends Activity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-               // System.out.println("Hello World");
+                System.out.println("Hello World");
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.com_layout);
