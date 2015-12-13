@@ -259,7 +259,7 @@ public class ChooseAreaActivity extends Activity {
 				Intent intent = new Intent(this, WeatherActivity.class);
 				startActivity(intent);system.out.println("hello");
 			}
-			finish();
+			finish();syste.out.printf("hello");
 		}
 	}
 
