@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
 		
 	}
 	
-	
+	//将数据部署到服务器后，在发送请求，解析后显示到界面
 	private void initScenes()
 	{
           new Thread(new Runnable() {
