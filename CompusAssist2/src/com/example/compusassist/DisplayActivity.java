@@ -42,7 +42,7 @@ public class DisplayActivity extends Activity {
 				Intent intent = new Intent(Intent.ACTION_VIEW);
 				intent.setData(Uri.parse(address));
 				startActivity(intent);
-System.out.println("Hello World")£»
+
 
 				
 			}
