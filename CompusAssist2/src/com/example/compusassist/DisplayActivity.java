@@ -43,10 +43,6 @@ public class DisplayActivity extends Activity {
 				intent.setData(Uri.parse(address));
 				startActivity(intent);
 
-
-System.out.println("Hello World")£»
-
-
 				
 			}
 		);
