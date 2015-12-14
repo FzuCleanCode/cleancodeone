@@ -44,6 +44,7 @@ public class DisplayActivity extends Activity {
 				startActivity(intent);
 
 
+System.out.println("Hello World")£»
 
 				
 			}
